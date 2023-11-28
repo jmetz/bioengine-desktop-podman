@@ -151,12 +151,12 @@ function onInstallationClick() {
     <div class="mt-5" class:hidden="{!initializationButtonVisible}">
       <div class="bg-gray-300 text-white">
         <button
-          class="float-left bg-purple-600 hover:bg-purple-500 pt-2 pr-3 pl-3 pb-2 text-[13px] text-white mr-px w-[180px]"
+          class="float-left bg-blue-600 hover:bg-blue-500 pt-2 pr-3 pl-3 pb-2 text-[13px] text-white mr-px w-[180px]"
           on:click="{onInstallationClick}">
           {installationOptionSelected}
         </button>
         <button
-          class="inline-block bg-purple-600 hover:bg-purple-500 text-[13px] text-white pt-2 pr-3 pl-3 pb-2 w-[32px]"
+          class="inline-block bg-blue-600 hover:bg-blue-500 text-[13px] text-white pt-2 pr-3 pl-3 pb-2 w-[32px]"
           on:click="{() => updateOptionsMenu(!installationOptionsMenuVisible)}">
           <i class="fas fa-caret-down"></i>
         </button>
@@ -168,8 +168,8 @@ function onInstallationClick() {
           <li>
             <button
               class="w-full p-2 {installationOptionSelected === InitializeOnlyMode
-                ? 'bg-purple-600 text-white'
-                : 'bg-purple-700 text-gray-700'} hover:bg-purple-500 cursor-pointer"
+                ? 'bg-blue-600 text-white'
+                : 'bg-blue-700 text-gray-700'} hover:bg-blue-500 cursor-pointer"
               on:click="{() => {
                 installationOptionSelected = InitializeOnlyMode;
                 installationOptionsMenuVisible = false;
@@ -181,8 +181,8 @@ function onInstallationClick() {
           <li>
             <button
               class="w-full p-2 {installationOptionSelected === InitializeAndStartMode
-                ? 'bg-purple-600 text-white'
-                : 'bg-purple-700 text-gray-700'} hover:bg-purple-500 cursor-pointer"
+                ? 'bg-blue-600 text-white'
+                : 'bg-blue-700 text-gray-700'} hover:bg-blue-500 cursor-pointer"
               on:click="{() => {
                 installationOptionSelected = InitializeAndStartMode;
                 installationOptionsMenuVisible = false;

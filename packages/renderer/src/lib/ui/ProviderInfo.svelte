@@ -10,14 +10,14 @@ export let provider = '';
 export let context = '';
 
 // Each provider has a colour associated to it within tailwind, this is a map of those colours.
-// bg-purple-600 = podman
+// bg-blue-600 = podman
 // bg-sky-300 = docker
 // bg-sky-600 = kubernetes
 // bg-gray-900 = unknown
 function getProviderColour(providerName: string): string {
   switch (providerName) {
     case ContainerGroupInfoTypeUI.PODMAN:
-      return 'bg-purple-600';
+      return 'bg-blue-600';
     case ContainerGroupInfoTypeUI.DOCKER:
       return 'bg-sky-400';
     case PodGroupInfoTypeUI.KUBERNETES:

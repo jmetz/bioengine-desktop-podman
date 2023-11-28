@@ -8,7 +8,7 @@ export let enabled = true;
 export let hidden = false;
 export let onClick: () => void = () => {};
 
-const enabledClasses = 'hover:bg-black hover:text-purple-500 hover:rounded-md text-gray-400 hover:cursor-pointer';
+const enabledClasses = 'hover:bg-black hover:text-blue-500 hover:rounded-md text-gray-400 hover:cursor-pointer';
 const disabledClasses = 'text-gray-900 bg-charcoal-800';
 </script>
 

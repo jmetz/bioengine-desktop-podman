@@ -1,6 +1,6 @@
 <style>
 .bootstrap-color {
-  --bs-primary: theme(colors.purple.500);
+  --bs-primary: theme(colors.blue.500);
 }
 </style>
 

@@ -5,7 +5,7 @@ import WindowControlButtons from '../window-control-buttons/ControlButtons.svelt
 
 let platform: string;
 
-const title = 'Podman Desktop';
+const title = 'BioEngine Desktop';
 
 onMount(async () => {
   platform = await window.getOsPlatform();

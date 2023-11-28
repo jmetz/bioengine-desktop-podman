@@ -43,7 +43,7 @@ export let volume: V1Volume;
 
 {#if volume}
   <tr>
-    <td class="py-2 px-4 text-md pl-2 font-semibold text-purple-300" colspan="2">{volume.name}</td>
+    <td class="py-2 px-4 text-md pl-2 font-semibold text-blue-300" colspan="2">{volume.name}</td>
   </tr>
 
   {#if volume.awsElasticBlockStore}

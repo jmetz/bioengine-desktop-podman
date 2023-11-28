@@ -33,9 +33,9 @@ function onClick(checked: boolean) {
     {#if disabled}
       <Fa size="18" icon="{faSquare}" class="text-charcoal-300" />
     {:else if indeterminate}
-      <Fa size="18" icon="{faMinusSquare}" class="text-dustypurple-500" />
+      <Fa size="18" icon="{faMinusSquare}" class="text-dustyblue-500" />
     {:else if checked}
-      <Fa size="18" icon="{faCheckSquare}" class="text-purple-500" />
+      <Fa size="18" icon="{faCheckSquare}" class="text-blue-500" />
     {:else}
       <Fa size="18" icon="{faOutlineSquare}" class="text-gray-400" />
     {/if}

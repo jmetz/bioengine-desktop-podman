@@ -56,7 +56,7 @@ let copyTextDivElement: HTMLDivElement;
           {commandline}
         </div>
         <button title="Copy To Clipboard" class="ml-5" on:click="{() => copyRunInstructionToClipboard()}"
-          ><Fa class="h-5 w-5 cursor-pointer text-xl text-purple-500 hover:text-purple-600" icon="{faPaste}" /></button>
+          ><Fa class="h-5 w-5 cursor-pointer text-xl text-blue-500 hover:text-blue-600" icon="{faPaste}" /></button>
       </div>
     {/if}
     {#if $$slots}

@@ -155,7 +155,7 @@ onDestroy(() => {
                 </div>
               {:else if !isInstalled}
                 <button
-                  class="px-3 my-1 text-sm font-medium text-center text-white bg-violet-600 rounded-sm hover:bg-dustypurple-800 focus:ring-2 focus:outline-none focus:ring-dustypurple-700"
+                  class="px-3 my-1 text-sm font-medium text-center text-white bg-violet-600 rounded-sm hover:bg-dustyblue-800 focus:ring-2 focus:outline-none focus:ring-dustyblue-700"
                   title="Install extension {extensionDetails.extensionName}"
                   on:click="{() => installExtension()}">
                   Install...

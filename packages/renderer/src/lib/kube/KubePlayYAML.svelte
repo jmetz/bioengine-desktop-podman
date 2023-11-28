@@ -188,13 +188,13 @@ async function getKubernetesfileLocation() {
                 hidden="{providerConnections.length === 0}"
                 class:border-2="{defaultContextName}"
                 class="rounded-md p-5 cursor-pointer {userChoice === 'podman'
-                  ? 'border-dustypurple-700'
+                  ? 'border-dustyblue-700'
                   : 'border-charcoal-600'}"
                 on:click="{() => {
                   userChoice = 'podman';
                 }}">
                 <div class="flex flex-row align-middle items-center">
-                  <div class=" text-2xl {userChoice === 'podman' ? 'text-dustypurple-500' : 'text-charcoal-600'}">
+                  <div class=" text-2xl {userChoice === 'podman' ? 'text-dustyblue-500' : 'text-charcoal-600'}">
                     <Fa icon="{faCircleCheck}" />
                   </div>
                   <div class="pl-2 text-gray-900">Using a Podman container engine</div>
@@ -206,7 +206,7 @@ async function getKubernetesfileLocation() {
                       class="py-6 block mb-2 text-sm font-medium text-gray-400 dark:text-gray-400"
                       >Container Engine
                       <select
-                        class="border text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 bg-gray-900 border-gray-900 placeholder-gray-700 text-white"
+                        class="border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-900 border-gray-900 placeholder-gray-700 text-white"
                         name="providerChoice"
                         bind:value="{selectedProvider}">
                         {#each providerConnections as providerConnection}
@@ -227,13 +227,13 @@ async function getKubernetesfileLocation() {
               <button
                 hidden="{!defaultContextName}"
                 class="border-2 rounded-md p-5 cursor-pointer {userChoice === 'kubernetes'
-                  ? 'border-dustypurple-700'
+                  ? 'border-dustyblue-700'
                   : 'border-charcoal-600'}"
                 on:click="{() => {
                   userChoice = 'kubernetes';
                 }}">
                 <div class="flex flex-row align-middle items-center">
-                  <div class=" text-2xl {userChoice === 'kubernetes' ? 'text-dustypurple-500' : 'text-charcoal-600'}">
+                  <div class=" text-2xl {userChoice === 'kubernetes' ? 'text-dustyblue-500' : 'text-charcoal-600'}">
                     <Fa icon="{faCircleCheck}" />
                   </div>
                   <div class="pl-2 text-gray-900">Using a Kubernetes cluster</div>

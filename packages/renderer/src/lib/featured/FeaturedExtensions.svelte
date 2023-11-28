@@ -12,7 +12,7 @@ import FeaturedExtensionDownload from './FeaturedExtensionDownload.svelte';
     <div
       title="{featuredExtension.description}"
       class="rounded-md
-               bg-charcoal-800 flex flex-row justify-center p-4 h-20 border-2 border-charcoal-800 hover:border-dustypurple-500"
+               bg-charcoal-800 flex flex-row justify-center p-4 h-20 border-2 border-charcoal-800 hover:border-dustyblue-500"
       aria-label="{featuredExtension.displayName}">
       <div class=" flex flex-col flex-1">
         <div class="flex flex-row place-items-center flex-1">
@@ -27,7 +27,7 @@ import FeaturedExtensionDownload from './FeaturedExtensionDownload.svelte';
           </div>
           <div class="h-full w-18 flex flex-col items-end place-content-center">
             {#if featuredExtension.installed}
-              <div class="text-dustypurple-700 p-1 text-center flex flex-row place-items-center">
+              <div class="text-dustyblue-700 p-1 text-center flex flex-row place-items-center">
                 <Fa class="ml-1.5 mr-2" size="18" icon="{faCheckCircle}" />
                 <div class="uppercase font-bold text-xs cursor-default">installed</div>
               </div>

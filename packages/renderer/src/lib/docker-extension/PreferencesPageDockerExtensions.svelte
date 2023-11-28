@@ -74,7 +74,7 @@ function deleteContribution(extensionName: string) {
           id="ociImage"
           bind:value="{ociImage}"
           placeholder="Name of the Image"
-          class="text-sm rounded-sm focus:ring-purple-500 focus:border-purple-500 block p-2.5 bg-charcoal-800 border-gray-900 placeholder-gray-400 text-white"
+          class="text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5 bg-charcoal-800 border-gray-900 placeholder-gray-400 text-white"
           required />
       </div>
     </div>
@@ -100,11 +100,11 @@ function deleteContribution(extensionName: string) {
   </div>
 
   {#if $contributions.length > 0}
-    <div class="flex border-t-2 border-purple-500 flex-1 flex-col mt-4 p-2">
+    <div class="flex border-t-2 border-blue-500 flex-1 flex-col mt-4 p-2">
       <p>Installed extensions:</p>
       <div class="grid gap-4 grid-cols-4 pt-4">
         {#each $contributions as contribution, index}
-          <div class="flex flex-col bg-purple-600 h-[100px]">
+          <div class="flex flex-col bg-blue-600 h-[100px]">
             <div class="flex justify-end flex-wrap">
               <button
                 class="inline-block text-gray-100 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-700 focus:outline-none rounded-lg text-sm p-1.5"

@@ -16,7 +16,7 @@ $: selected = meta.url === uri || (uri !== '/' && meta.url.startsWith(uri));
 <a href="{onClick ? '#top' : uri}" aria-label="{ariaLabel ? ariaLabel : tooltip}" on:click|preventDefault="{onClick}">
   <div
     class="flex w-full py-3 justify-center items-center border-x-[4px] border-charcoal-800 text-white cursor-pointer"
-    class:border-l-purple-500="{selected}"
+    class:border-l-blue-500="{selected}"
     class:bg-charcoal-500="{selected}"
     class:border-r-charcoal-500="{selected}"
     class:border-l-charcoal-800="{!selected}"

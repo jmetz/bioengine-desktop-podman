@@ -1,15 +1,24 @@
 :root {
-  --pf-global--primary-color--100: #8442f5;
-  --pf-global--primary-color--light-100: #8442f5;
-  --pf-global--primary-color--dark-100: #8442f5;
+  /*--pf-global--primary-color--100: #8442f5;*/
+  --pf-global--primary-color--100: #2196f3;
+  /*--pf-global--primary-color--light-100: #8442f5;*/
+  --pf-global--primary-color--light-100: #2196f3;
+  /* --pf-global--primary-color--dark-100: #8442f5;*/
+  --pf-global--primary-color--dark-100: #2196f3;
 
-  --pf-global--primary-color--200: #7c3aed;
-  --pf-global--primary-color--light-200: #7c3aed;
-  --pf-global--primary-color--dark-200: #7c3aed;
+  /*--pf-global--primary-color--200: #7c3aed;*/
+  /*--pf-global--primary-color--light-200: #7c3aed;*/
+  /*--pf-global--primary-color--dark-200: #7c3aed;*/
+  --pf-global--primary-color--200: #2196f3;
+  --pf-global--primary-color--light-200: #2196f3;
+  --pf-global--primary-color--dark-200: #2196f3;
 
-  --pf-global--primary-color--300: #8c4afd;
-  --pf-global--primary-color--light-300: #8c4afd;
-  --pf-global--primary-color--dark-300: #8c4afd;
+  /*--pf-global--primary-color--300: #8c4afd;*/
+  /*--pf-global--primary-color--light-300: #8c4afd;*/
+  /*--pf-global--primary-color--dark-300: #8c4afd;*/
+  --pf-global--primary-color--300: #2196f3;
+  --pf-global--primary-color--light-300: #2196f3;
+  --pf-global--primary-color--dark-300: #2196f3;
 
   --pf-global--BackgroundColor--300: #222222; /*charcoal-700*/
 

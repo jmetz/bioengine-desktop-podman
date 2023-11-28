@@ -16,7 +16,7 @@ export let showTelemetry = false;
 let telemetry = true;
 
 const welcomeUtils = new WelcomeUtils();
-let podmanDesktopVersion: string;
+let bioengineDesktopVersion: string;
 
 onMount(async () => {
   const ver = await welcomeUtils.getVersion();
@@ -28,7 +28,7 @@ onMount(async () => {
   if (!telemetryPrompt) {
     showTelemetry = true;
   }
-  podmanDesktopVersion = await window.getPodmanDesktopVersion();
+  bioengineDesktopVersion = await window.getBioengineDesktopVersion();
 });
 
 function closeWelcome() {
@@ -45,19 +45,19 @@ function closeWelcome() {
     style="background-image: url({bgImage}); background-position: 50% -175%; background-size: 100% 75%">
     <!-- Header -->
     <div class="flex flex-row flex-none backdrop-blur p-6 mt-10">
-      <div class="flex flex-auto text-lg font-bold">Get started with Podman Desktop</div>
+      <div class="flex flex-auto text-lg font-bold">Get started with Bioengine Desktop</div>
     </div>
 
     <!-- Body -->
     <div class="flex flex-col justify-center content-center flex-auto backdrop-blur p-2 overflow-y-auto">
       <div class="flex justify-center p-2"><DesktopIcon /></div>
       <div class="flex justify-center text-lg font-bold p-2">
-        <span class="mr-2">🎉</span>Welcome to Podman Desktop v{podmanDesktopVersion} !
+        <span class="mr-2">🎉</span>Welcome to Bioengine Desktop v{bioengineDesktopVersion} !
       </div>
       <div class="flex flex-row justify-center">
         <div class="bg-charcoal-500 px-4 pb-4 pt-2 rounded">
           <div class="flex justify-center text-sm text-gray-700 pb-2">
-            <div>Podman desktop supports many container engines and orchestrators, such as:</div>
+            <div>Bioengine desktop supports many container engines and orchestrators, such as:</div>
           </div>
           <div class="grid grid-cols-3 gap-3">
             {#each $featuredExtensionInfos as featuredExtension}
@@ -115,7 +115,7 @@ function closeWelcome() {
             <span class="font-medium font-bold px-2">Telemetry:</span>
           </label>
           <div class="w-2/5 text-gray-400">
-            Help Red Hat improve Podman Desktop by allowing anonymous usage data to be collected.
+            Help us improve Bioengine Desktop by allowing anonymous usage data to be collected.
             <button
               class="text-violet-400 pl-1"
               on:click="{() => {
@@ -142,7 +142,7 @@ function closeWelcome() {
         <Button
           on:click="{() => {
             closeWelcome();
-          }}">Go to Podman Desktop</Button>
+          }}">Go to Bioengine Desktop</Button>
       </div>
     </div>
   </div>

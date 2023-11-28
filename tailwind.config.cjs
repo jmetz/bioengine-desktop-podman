@@ -67,6 +67,7 @@ module.exports = {
         800: '#9a9a9a',
         900: '#818181',
       },
+      'blue': tailwindColors.blue,
       'purple': {
          50: '#f7f3ff',
         100: '#efe9fe',

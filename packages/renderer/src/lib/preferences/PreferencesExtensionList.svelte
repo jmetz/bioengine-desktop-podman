@@ -140,7 +140,7 @@ async function updateExtension(extension: ExtensionInfo, ociUri: string) {
                         {#if extension.update}
                           {@const extensionUpdate = extension.update}
                           <button
-                            class="mx-2 px-2 text-xs font-medium text-center text-white bg-violet-600 rounded-sm hover:bg-dustypurple-800 focus:ring-2 focus:outline-none focus:ring-dustypurple-700"
+                            class="mx-2 px-2 text-xs font-medium text-center text-white bg-violet-600 rounded-sm hover:bg-dustyblue-800 focus:ring-2 focus:outline-none focus:ring-dustyblue-700"
                             title="Update to {extension.update.version}"
                             on:click="{() => updateExtension(extension, extensionUpdate.ociUri)}">
                             Update</button>

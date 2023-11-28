@@ -32,7 +32,7 @@ onMount(() => {
     iconColor = 'text-red-500';
   } else {
     icon = faInfoCircle;
-    iconColor = 'text-purple-500';
+    iconColor = 'text-blue-500';
   }
 });
 
@@ -65,7 +65,7 @@ function gotoTask(taskUI: TaskUI) {
         {#if taskUI.state === 'completed'}
           <button
             title="Clear notification"
-            class="hover:bg-charcoal-800 hover:text-purple-500"
+            class="hover:bg-charcoal-800 hover:text-blue-500"
             on:click="{() => closeCompleted(taskUI)}"><Fa size="12" icon="{faClose}" /></button>
         {/if}
       </div>
@@ -82,9 +82,9 @@ function gotoTask(taskUI: TaskUI) {
         {#if (taskUI.progress || 0) >= 0}
           <ProgressBar progress="{taskUI.progress}" />
         {/if}
-        <div class="flex flex-1 flex-col w-full items-end text-purple-500 text-xs">
+        <div class="flex flex-1 flex-col w-full items-end text-blue-500 text-xs">
           {#if taskUI.hasGotoTask}
-            <button class="text-purple-500 cursor-pointer" on:click="{() => gotoTask(taskUI)}">Go to task ></button>
+            <button class="text-blue-500 cursor-pointer" on:click="{() => gotoTask(taskUI)}">Go to task ></button>
           {/if}
         </div>
       </div>
@@ -93,7 +93,7 @@ function gotoTask(taskUI: TaskUI) {
     <!-- if failed task, display the error-->
     {#if taskUI.status === 'failure'}
       <div class="flex flex-col w-full items-end">
-        <button on:click="{() => (showError = !showError)}" class="text-purple-200 text-xs">
+        <button on:click="{() => (showError = !showError)}" class="text-blue-200 text-xs">
           View Error
           {#if showError}
             <i class="fas fa-chevron-up"></i>

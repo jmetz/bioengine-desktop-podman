@@ -30,7 +30,7 @@ function copyLogsToClipboard() {
     <div class="text-xl">Logs</div>
     <div class="flex flex-1 justify-end">
       <button title="Copy To Clipboard" class="ml-5" on:click="{() => copyLogsToClipboard()}"
-        ><Fa class="h-5 w-5 cursor-pointer text-xl text-purple-500 hover:text-purple-600" icon="{faPaste}" /></button>
+        ><Fa class="h-5 w-5 cursor-pointer text-xl text-blue-500 hover:text-blue-600" icon="{faPaste}" /></button>
     </div>
   </div>
   {#if logs.length > 0}

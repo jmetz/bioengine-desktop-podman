@@ -389,7 +389,7 @@ async function restartSetup() {
         <div class="grow"></div>
         {#if activeStep.step.state !== 'failed'}
           <div class="mt-10 mx-auto text-sm min-h-[120px]" aria-label="next-info-message">
-            Press the <span class="bg-purple-700 p-0.5">Next</span> button below to proceed.
+            Press the <span class="bg-blue-700 p-0.5">Next</span> button below to proceed.
           </div>
         {:else}
           <div class="mt-10 mx-auto text-sm min-h-[120px]" aria-label="exit-info-message">
