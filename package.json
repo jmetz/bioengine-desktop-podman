@@ -165,6 +165,7 @@
     "electron-context-menu": "^3.6.1",
     "electron-updater": "6.1.7",
     "electron-util": "^0.17.2",
+    "g": "^2.0.1",
     "getos": "^3.2.1",
     "got": "^13.0.0",
     "hpagent": "^1.2.0",
