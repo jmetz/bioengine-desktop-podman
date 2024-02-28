@@ -45,14 +45,14 @@ function closeWelcome() {
     style="background-image: url({bgImage}); background-position: 50% -175%; background-size: 100% 75%">
     <!-- Header -->
     <div class="flex flex-row flex-none backdrop-blur p-6 mt-10">
-      <div class="flex flex-auto text-lg font-bold">Get started with Podman Desktop</div>
+      <div class="flex flex-auto text-lg font-bold">Get started with Bioengine Desktop</div>
     </div>
 
     <!-- Body -->
     <div class="flex flex-col justify-center content-center flex-auto backdrop-blur p-2 overflow-y-auto">
       <div class="flex justify-center p-2"><DesktopIcon /></div>
       <div class="flex justify-center text-lg font-bold p-2">
-        <span class="mr-2">🎉</span>Welcome to Podman Desktop v{podmanDesktopVersion} !
+        <span class="mr-2">🎉</span>Welcome to Bioengine Desktop (using Podman Desktop v{podmanDesktopVersion}) !
       </div>
       <div class="flex flex-row justify-center">
         <div class="bg-charcoal-500 px-4 pb-4 pt-2 rounded">

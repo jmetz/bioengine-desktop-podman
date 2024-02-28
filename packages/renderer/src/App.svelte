@@ -4,6 +4,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import { router } from 'tinro';
 
 import Route from './Route.svelte';
+import BioEnginePage from './lib/bioengine/BioEnginePage.svelte';
+import Kaibu from './lib/bioengine/Kaibu.svelte';
 import ContainerList from './lib/container/ContainerList.svelte';
 import ImagesList from './lib/image/ImagesList.svelte';
 import PreferencesPage from './lib/preferences/PreferencesPage.svelte';
@@ -92,6 +94,12 @@ window.events?.receive('display-troubleshooting', () => {
         <ToastHandler />
         <Route path="/" breadcrumb="Dashboard Page">
           <DashboardPage />
+        </Route>
+        <Route path="/bioengine" breadcrumb="Bioengine">
+          <BioEnginePage />
+        </Route>
+        <Route path="/kaibu" breadcrumb="Kaibu">
+          <Kaibu />
         </Route>
         <Route path="/containers" breadcrumb="Containers" navigationHint="root">
           <ContainerList searchTerm="{meta.query.filter || ''}" />

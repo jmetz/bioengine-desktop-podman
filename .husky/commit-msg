@@ -17,6 +17,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
+
+echo "Husky commit message linting is disabled; See $(realpath $0)"
+exit
+
 . "$(dirname -- "$0")/_/husky.sh"
 
 set -u

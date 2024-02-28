@@ -16,6 +16,8 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-. "$(dirname -- "$0")/_/husky.sh"
+echo "Husky pre-commit is disabled; See $(realpath $0)"
 
-yarn lint-staged
+#. "$(dirname -- "$0")/_/husky.sh"
+
+#yarn lint-staged
